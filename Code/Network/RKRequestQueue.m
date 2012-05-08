@@ -476,7 +476,6 @@ static const NSTimeInterval kFlushDelay = 0.3;
     }
 
     [self removeLoadingRequest:request];
-    [self loadNextInQueue];
 }
 
 - (void)processRequestDidFailWithErrorNotification:(NSNotification *)notification {
@@ -501,7 +500,6 @@ static const NSTimeInterval kFlushDelay = 0.3;
     }
 
     [self removeLoadingRequest:request];
-    [self loadNextInQueue];
 }
 
 /*
